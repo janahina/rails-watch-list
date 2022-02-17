@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
-
-@janahina
-heartcombo
-/
-simple_form-bootstrap
-Public
-Code
-Issues
-1
-Pull requests
-2
-Actions
-Wiki
-Security
-Insights
-simple_form-bootstrap/config/initializers/simple_form_bootstrap.rb /
-@m5o
-m5o Custom Forms - Switches (#335)
-…
-Latest commit 7de3fd7 on 21 May 2021
- History
- 4 contributors
-@m5o@rafaelfranca@mhw@carlosantoniodasilva
-374 lines (331 sloc)  13.9 KB
-
 # frozen_string_literal: true
 
 # Please do not make direct changes to this file!
@@ -403,15 +372,3 @@ SimpleForm.setup do |config|
     select:        :vertical_select
   }
 end
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

@@ -1,26 +1,29 @@
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 10%;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  border-radius: 5px;
+  padding: 0px;
 }
 
 .card-product img {
   height: 100%;
-  width: 120px;
-  object-fit: cover;
+  width: 20%;
+  object-fit:cover;
+  // margin-left: 20px;
 }
 
 .card-product h2 {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-product p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -28,6 +31,14 @@
 }
 
 .card-product .card-product-infos {
+  width: 70vw;
   padding: 16px;
 }
 
+.card-product i {
+  color: rgba(218, 128, 124, 0.5);
+  font-size: 24px;
+}
+.card-product i:hover {
+  color: rgb(218, 128, 124);
+}

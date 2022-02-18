@@ -1,0 +1,17 @@
+<li class="list-group-item p-0 m-3">
+  <div class="row card-product">
+    <img src="<%= bookmark.movie.poster_url %>" />
+    <div class="col-8 card-product-info">
+      <h2><%= bookmark.movie.title %></h2>
+      <p><%= bookmark.comment %> <strong>relevant info</strong> only.</p>
+    </div>
+    <div class="col card-product-icon">
+      <%= link_to bookmark_path(bookmark),
+        class: " mt-2",
+        method: :delete,
+        data: { confirm: "Are you sure?" } do %>
+        <i class="fas fa-trash-alt"></i>
+        <% end %>
+    </div>
+  </div>
+</li>

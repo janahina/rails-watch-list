@@ -1,7 +1,7 @@
 .card-category {
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,9 @@
   border-radius: 5px;
 }
 
+.big {
+  height: 250px;
+}
 .card-category a {
   text-decoration: none;
   color: whitesmoke;

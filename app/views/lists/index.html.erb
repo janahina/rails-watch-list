@@ -1,7 +1,14 @@
-<h2><%= link_to 'Create New List', new_list_path %></h2>
 
-<h2>List of Lists:</h2>
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1vdmllfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1200&q=60)">
+My Lists
+</div>
 
-<% @lists.each do |list| %>
-  <h3><%= link_to list.name, list_path(list) %></h3>
-<% end %>
+<div class="container">
+  <div class="row mt-4">
+    <% @lists.each do |list| %>
+        <div class="col m-4 card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= list.image_url %>')">
+        <h2><%= link_to list.name, list_path(list) %></h2>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,13 +1,16 @@
-<div class="container mt-5">
+<div class="form-container mt-5">
+<h3>Create New List</h3>
+  <div class="row">
+    <%= simple_form_for(@list) do |f| %>
+
+      <div class=" col form-inputs">
+        <%= f.input :name %>
+        <%= f.input :image_url %>
+      </div>
+
+      <div class="col form-actions">
+        <%= f.submit "Create List", class: "btn btn-ghost mt-2" %>
+      </div>
+    <% end %>
   </div>
-  <%= simple_form_for(@list) do |f| %>
-
-    <div class="form-inputs">
-      <%= f.input :name %>
-    </div>
-
-    <div class="form-actions">
-      <%= f.button :submit %>
-    </div>
-  <% end %>
 </div>
